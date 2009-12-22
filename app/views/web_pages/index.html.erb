@@ -1,0 +1,18 @@
+<p><%= link_to 'New PDF from web page', new_web_page_path %></p>
+
+<table class="list">
+  <tr>
+    <th>Web page url</th>
+    <th>Created at</th>
+  </tr>
+  <% for web_page in @web_pages %>
+    <tr class="<%= cycle('odd', 'even') %>">
+      <td><%= link_to h(truncate(web_page.url, :length => 40)), web_page_path(web_page), :title => h(web_page.url) %></td>
+      <td><%=h web_page.created_at %>
+    </tr>
+  <% end %>
+</table>
+
+<%= will_paginate @web_pages %>
+
+<p><%= link_to 'New PDF from web page', new_web_page_path %></p>

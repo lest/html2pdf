@@ -1,0 +1,5 @@
+config/database.yml
+log/*
+mkmf.log
+public/system
+tmp/*

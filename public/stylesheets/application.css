@@ -1,0 +1,123 @@
+body {
+  background-color: #dddddd;
+  font-family: Verdana, Helvetica, Arial;
+  font-size: 12px;
+  margin: 0;
+}
+
+a img {
+  border: none;
+}
+
+a {
+  color: #0000ff;
+}
+
+h1 {
+  border-bottom: 1px solid #aaaaaa;
+  color: #444444;
+  font-weight: normal;
+  margin-top: 0;
+}
+
+.clear {
+  clear: both;
+  height: 0;
+  overflow: hidden;
+}
+
+table.list {
+  border-collapse: collapse;
+  width: 80%;
+}
+
+table.list th, table.list td {
+  padding: 4px;
+}
+
+table.list th {
+  background: #444444;
+  color: #ffffff;
+  font-weight: normal;
+  text-align: left;
+}
+
+table.list tr.odd td {
+  background: #ffffff;
+}
+
+table.list tr.even td {
+  background: #eeeeee;
+}
+
+img.loader {
+  position: relative;
+  top: 3px;
+}
+
+#container {
+  background-color: #ffffff;
+  border: solid 1px #aaaaaa;
+  border-top: none;
+  margin: 0 auto;
+  padding: 20px 40px 40px 40px;
+  width: 75%;
+}
+
+#flash_notice, #flash_error {
+  padding: 5px 8px;
+  margin: 10px 0;
+}
+
+#flash_notice {
+  background-color: #ccffcc;
+  border: solid 1px #66cc66;
+}
+
+#flash_error {
+  background-color: #ffcccc;
+  border: solid 1px #cc6666;
+}
+
+.fieldWithErrors {
+  display: inline;
+}
+
+.formError {
+  color: #ff0000;
+  display: inline;
+}
+
+#errorExplanation {
+  width: 400px;
+  border: 2px solid #cf0000;
+  padding: 0px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#errorExplanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: 0;
+  background-color: #cc0000;
+  color: #ffffff;
+}
+
+#errorExplanation p {
+  color: #333333;
+  margin-bottom: 0;
+  padding: 8px;
+}
+
+#errorExplanation ul {
+  margin: 2px 24px;
+}
+
+#errorExplanation ul li {
+  font-size: 12px;
+  list-style: disc;
+}

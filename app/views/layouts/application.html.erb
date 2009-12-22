@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <title>HTML to PDF converter<%= " | #{h(yield(:title))}" if yield(:title) %></title>
+    <%= stylesheet_link_tag 'application' %>
+    <%= yield(:head) %>
+  </head>
+  <body>
+    <div id="container">
+      <% flash.each do |type, message| %>
+        <%= content_tag :div, message, :id => "flash_#{type}" %>
+      <% end %>
+      
+      <% if show_title? %>
+        <h1><%=h yield(:title) %></h1>
+      <% end %>
+      
+      <%= yield %>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+<% title "#{truncate(@web_page.url, :length => 40)} to PDF" %>
+
+<p>
+  Web page url: <%= link_to h(@web_page.url), @web_page.url, :rel => 'nofollow' %>
+</p>
+
+<p>
+  Generated PDF:
+  <% if @web_page.pdf_document.file? %>
+    <%= link_to 'Download', @web_page.pdf_document.url %>
+  <% else %>
+    <%= image_tag 'ajax-loader.gif', :class => 'loader' %>
+    Processing...
+    <% content_for :head do %>
+      <meta http-equiv="refresh" content="5" />
+    <% end %>
+  <% end %>
+</p>
+
+<p><%= link_to 'Back to List', web_pages_path %></p>

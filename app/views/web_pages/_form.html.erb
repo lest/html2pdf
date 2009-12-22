@@ -1,0 +1,10 @@
+<% form_for @web_page do |f| %>
+  <p>
+    <%= f.label :url, 'Web page url' %>:
+    <%= f.text_field :url %>
+    <%= f.error_message_on :url %>
+  </p>
+  <p>
+    <%= f.submit 'Create PDF from web page' %>
+  </p>
+<% end %>

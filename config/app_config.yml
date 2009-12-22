@@ -1,0 +1,11 @@
+development:
+  domain: html2pdf.dev
+  wkhtmltopdf_binary_path: wkhtmltopdf
+
+test:
+  domain: test.host
+  wkhtmltopdf_binary_path: wkhtmltopdf
+
+production:
+  domain: html2pdf.justlest.info
+  wkhtmltopdf_binary_path: wkhtmltopdf
